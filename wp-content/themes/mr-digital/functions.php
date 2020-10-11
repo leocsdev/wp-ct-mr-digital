@@ -1,7 +1,7 @@
 <?php
 	
 	// load all css
-	function loadCSS() {
+	function load_css() {
 		// load bootstrap
 		wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
 
@@ -13,7 +13,7 @@
 		wp_enqueue_style('main');
 	}
 
-	add_action('wp_enqueue_scripts', 'loadCSS');
+	add_action('wp_enqueue_scripts', 'load_css');
 
 	// load all javascript
 	function loadJS() {
