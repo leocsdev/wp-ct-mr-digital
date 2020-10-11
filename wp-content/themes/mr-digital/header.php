@@ -12,7 +12,7 @@
 			<?php
 				wp_nav_menu(
 					array(
-						'theme_location' => 'top-nav',
+						'theme_location' => 'top-navbar',
 						'menu_class' => 'top-navbar'
 					)
 				);

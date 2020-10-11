@@ -18,13 +18,14 @@
 
 	// load all javascript
 	function load_js() {
+
+		// load jquery
+		wp_enqueue_script('jquery');
+
 		// load bootstrap js
 		wp_register_script('bootstrapJS', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true);
 
 		wp_enqueue_script('bootstrapJS');
-
-		// load jquery
-		wp_enqueue_script('jquery');
 	}
 
 	// hook the function load_js to header
@@ -38,8 +39,8 @@
 	// menus
 	register_nav_menus(
 		array(
-			'top-nav' => 'Top Menu Location',
-			'mobile-nav' => 'Mobile Menu Location',
+			'top-navbar' => 'Top Menu Location',
+			'mobile-navbar' => 'Mobile Menu Location',
 		)
 	);
 
