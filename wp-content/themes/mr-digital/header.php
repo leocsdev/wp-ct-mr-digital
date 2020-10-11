@@ -13,7 +13,7 @@
 				wp_nav_menu(
 					array(
 						'theme_location' => 'top-navbar',
-						'menu_class' => 'top-navbar'
+						'menu_class' => 'top-navbar' // assign a css class for styling
 					)
 				);
 			?>
