@@ -67,3 +67,10 @@ header .top-navbar li .sub-menu a:hover {
 header .top-navbar .menu-item-has-children:hover .sub-menu {
   display: block;
 }
+
+/* POST THUMBNAIL */
+.page-wrap .container .img-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
