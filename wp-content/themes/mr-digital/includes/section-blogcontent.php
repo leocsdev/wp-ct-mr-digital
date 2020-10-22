@@ -40,4 +40,7 @@
     <?php endforeach; ?>
   <?php endif; ?>
 
+  <!-- DISPLAY DEFAULT COMMENTS SECTION -->
+  <?php // comments_template(); ?>
+
 <?php endwhile; else: endif; ?>
