@@ -15,7 +15,7 @@
     <div class="blog-content">
       <h3><?php the_title(); ?></h3>
       <?php the_excerpt(); ?>
-      <a href="<?php the_permalink(); ?>">Read More</a>
+      <a class="btn btn-success" href="<?php the_permalink(); ?>">Read More</a>
     </div>
   </div>
 </div>

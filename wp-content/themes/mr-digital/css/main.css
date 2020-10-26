@@ -74,3 +74,10 @@ header .top-navbar .menu-item-has-children:hover .sub-menu {
   max-width: 800px;
   margin: 0 auto;
 }
+
+
+/* Widgets */
+
+.widget {
+  list-style-type: none;
+}
