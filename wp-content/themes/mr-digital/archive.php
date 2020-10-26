@@ -2,7 +2,6 @@
 
 <section class="page-wrap">
   <div class="container">
-
     <div class="row">
       <div class="col-md-3">
         <!-- set blog sidebar -->
@@ -12,9 +11,6 @@
       </div>
 
       <div class="col-md-9">
-        
-
-
         <h1><?php echo single_cat_title(); ?></h1>
         <?php get_template_part('includes/section', 'archive'); ?>
 
@@ -37,15 +33,9 @@
           //   'total' => $wp_query->max_num_pages
           // ));
         ?>
-      
-      
       </div>
-    
-
-      
     </div>
   </div>
-    
 </section>
 
 <?php get_footer(); ?>
