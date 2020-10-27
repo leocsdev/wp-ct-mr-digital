@@ -5,6 +5,9 @@
 ?>
 
 <?php get_header(); ?>
+
+<p class="text-muted">template-contact-us.php template</p>
+
 <div class="page-wrap">
 	<div class="container">
 		<h1><?php the_title(); ?></h1>

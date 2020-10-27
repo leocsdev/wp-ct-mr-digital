@@ -3,6 +3,7 @@
 
 	This will pull the page content from WP
  -->
+ <p class="text-muted">section-content.php</p>
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
 

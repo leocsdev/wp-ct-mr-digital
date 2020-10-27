@@ -1,3 +1,5 @@
+<p class="text-muted">searchform.php</p>
+
 <form action="/" method="get">
   <label for="search">Search</label>
   

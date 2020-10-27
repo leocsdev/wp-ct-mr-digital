@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<p class="text-muted">archive.php template</p>
+
 <section class="page-wrap">
   <div class="container">
     <div class="row">

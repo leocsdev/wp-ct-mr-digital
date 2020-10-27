@@ -1,6 +1,7 @@
 <!-- 
   This will be called by search.php
  -->
+ <p class="text-muted">section-searchresult.php</p>
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
 

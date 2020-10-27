@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-	
+
+<p class="text-muted">front-page.php template</p>
 
 <section class="page-wrap">
 	<div class="container">

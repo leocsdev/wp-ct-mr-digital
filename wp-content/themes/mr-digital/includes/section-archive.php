@@ -3,6 +3,7 @@
   
   This will pull the content from WP blog posts
  -->
+<p class="text-muted">section-archive.php</p>
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
