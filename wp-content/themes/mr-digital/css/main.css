@@ -81,3 +81,16 @@ header .top-navbar .menu-item-has-children:hover .sub-menu {
 .widget {
   list-style-type: none;
 }
+
+
+/* 404 page */
+.page-not-found {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+
+}
