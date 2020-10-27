@@ -4,12 +4,10 @@
 	function load_css() {
 		// load bootstrap
 		wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
-
 		wp_enqueue_style('bootstrap');
 
 		// load main.css
 		wp_register_style('main', get_template_directory_uri() . '/css/main.css', array(), false, 'all');
-
 		wp_enqueue_style('main');
 	}
 
@@ -18,13 +16,11 @@
 
 	// load all javascript
 	function load_js() {
-
 		// load jquery
 		wp_enqueue_script('jquery');
 
 		// load bootstrap js
 		wp_register_script('bootstrapJS', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true);
-
 		wp_enqueue_script('bootstrapJS');
 	}
 
@@ -32,10 +28,12 @@
 	add_action('wp_enqueue_scripts', 'load_js');
 
 
+
 	// theme options
 	add_theme_support('menus');
 	add_theme_support('post-thumbnails');
 	add_theme_support('widgets');
+
 
 
 	// register sidebars 
@@ -62,6 +60,48 @@
 	add_action('widgets_init', 'my_sidebars');
 
 
+
+	// register custom post type
+	function my_first_post_type() {
+		$args = array(
+			'labels' => array(
+				'name' => 'Cars',
+				'singular_name' => 'Car'
+			),
+			'hierarchical' => true,
+			'public' => true,
+			'has_archive' => true,
+			'menu_icon' => 'dashicons-images-alt2',
+			'supports' => array('title', 'editor', 'thumbnail')
+			// 'rewrite' => array('slug' => 'my-cars')
+		);
+
+		register_post_type('cars', $args);
+	}
+
+	add_action('init', 'my_first_post_type');
+
+
+
+	// register taxonomy
+	function my_first_taxonomy() {
+		$args = array(
+			'labels' => array(
+				'name' => 'Brands',
+				'singular_name' => 'Brand'
+			),
+			'public' => true,
+			// will act more as Categories but under the name Brands
+			'hierarchical' => true
+		);
+		
+		// attach this taxonomy to Cars custom posts
+		register_taxonomy('brands', array('cars'), $args);
+	}
+
+	add_action('init', 'my_first_taxonomy');
+
+
 	// menus
 	register_nav_menus(
 		array(
@@ -75,6 +115,5 @@
 	add_image_size('blog-small', 300, 200, true);
 
 	// NOTE: if you have a lot of images already uploaded, you may want to install the Force Regenerate Thumbnails for images to be automatically crop to custom image sizes
-
 	
 ?>
