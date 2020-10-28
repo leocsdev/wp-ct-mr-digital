@@ -40,7 +40,9 @@
       </a>
     <?php endforeach; ?>
   <?php endif; ?>
-
+  
+  <br><br><br><br>
+  
   <!-- DISPLAY DEFAULT COMMENTS SECTION -->
   <?php // comments_template(); ?>
 
